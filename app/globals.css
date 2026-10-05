@@ -167,10 +167,14 @@ button:disabled {
 }
 .site-header {
   height: 98px;
-  border-bottom: 1px solid var(--line);
-  background: var(--paper);
-  position: relative;
-  z-index: 20;
+  border-bottom: 1px solid rgba(220, 224, 215, 0.85);
+  background: rgba(249, 250, 247, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background 0.3s, box-shadow 0.3s;
 }
 .header-inner {
   height: 100%;
@@ -370,15 +374,22 @@ button:disabled {
 }
 .solution-card {
   display: block;
+  border-radius: 4px;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.solution-card:hover {
+  transform: translateY(-4px);
 }
 .solution-card .image-wrap {
   aspect-ratio: 1.65;
+  border-radius: 3px;
+  overflow: hidden;
 }
 .solution-card .image-wrap img {
-  transition: transform 0.6s;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .solution-card:hover .image-wrap img {
-  transform: scale(1.035);
+  transform: scale(1.04);
 }
 .card-label {
   display: flex;
@@ -394,6 +405,10 @@ button:disabled {
 .card-label h3 {
   font-size: 1.3rem;
   line-height: 1.4;
+  transition: color 0.2s;
+}
+.solution-card:hover .card-label h3 {
+  color: #4b5e28;
 }
 .card-label p {
   font-size: 0.875rem;
@@ -409,10 +424,12 @@ button:disabled {
   place-items: center;
   font-size: 1.2rem;
   flex-shrink: 0;
+  transition: background 0.25s, color 0.25s, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .solution-card:hover .card-plus {
   background: var(--ink);
   color: white;
+  transform: rotate(90deg);
 }
 .image-disclaimer {
   font-size: 0.75rem;
@@ -782,11 +799,20 @@ button:disabled {
   padding: 12px 13px;
   background: #fcfdfb;
   margin-top: 9px;
-  border-radius: 2px;
+  border-radius: 4px;
   color: var(--ink);
   font-size: 0.875rem;
   font-weight: 400;
   min-width: 0;
+  transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+.form-grid input:focus,
+.form-grid select:focus,
+.form-grid textarea:focus {
+  outline: none;
+  border-color: #667746;
+  box-shadow: 0 0 0 3px rgba(102, 119, 70, 0.15);
+  background: #ffffff;
 }
 .form-grid textarea {
   resize: vertical;
@@ -840,6 +866,37 @@ button:disabled {
   background: #f8fafc;
   border: 1px solid #cbd5e1;
   color: #334155;
+}
+.direct-contact-box {
+  margin-top: 32px;
+  padding: 20px 24px;
+  background: rgba(220, 231, 202, 0.4);
+  border-left: 3px solid #667746;
+  border-radius: 4px;
+}
+.direct-contact-box h3 {
+  margin: 0 0 4px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.direct-contact-box p {
+  margin: 0 0 10px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.contact-email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.contact-email-link:hover {
+  color: #4b5e28;
 }
 .legal {
   max-width: 900px;

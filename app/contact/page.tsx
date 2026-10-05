@@ -5,7 +5,7 @@ import { solutions } from "@/lib/solutions";
 export const metadata: Metadata = {
   title: "Discuss your project",
   description:
-    "Start your project brief for a customized prefab, modular or container building.",
+    "Start your project brief for a customized prefab, modular or container building with Skyhigh Engineering.",
 };
 
 export const dynamic = "force-dynamic";
@@ -45,6 +45,13 @@ export default async function Contact({
               <li>Your location and approximate dimensions</li>
               <li>Any layout, finish or timeline requirements</li>
             </ul>
+          </div>
+          <div className="direct-contact-box">
+            <h3>Direct email</h3>
+            <p>Prefer to write to us directly?</p>
+            <a href="mailto:aeronixskylabs@gmail.com" className="contact-email-link">
+              ✉ aeronixskylabs@gmail.com
+            </a>
           </div>
         </div>
         <div className="form-panel">
