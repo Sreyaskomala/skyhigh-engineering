@@ -1,25 +1,33 @@
 "use client";
+
 import { useState, type FormEvent } from "react";
 import { solutions } from "@/lib/solutions";
+
 export default function EnquiryForm({
   initialSolution = "",
-  configured,
+  configured = true,
 }: {
   initialSolution?: string;
-  configured: boolean;
+  configured?: boolean;
 }) {
-  const [status, setStatus] = useState("");
+  const [status, setStatus] = useState<{
+    type: "success" | "error" | "info";
+    message: string;
+  } | null>(null);
   const [busy, setBusy] = useState(false);
+
   function download(form: HTMLFormElement) {
     if (!form.reportValidity()) return;
     const data = new FormData(form);
     const text = [
       "SKYHIGH ENGINEERING — PROJECT BRIEF",
+      "Recipient Email: aeronixskylabs@gmail.com",
       "",
       ...["name", "email", "phone", "solution", "location", "requirements"].map(
         (k) => `${k.toUpperCase()}: ${data.get(k) || "Not provided"}`,
       ),
     ].join("\n\n");
+
     const url = URL.createObjectURL(
       new Blob([text], { type: "text/plain;charset=utf-8" }),
     );
@@ -28,44 +36,57 @@ export default function EnquiryForm({
     a.download = "skyhigh-project-brief.txt";
     a.click();
     URL.revokeObjectURL(url);
-    setStatus(
-      "Your project brief has been downloaded. It has not been sent to Skyhigh.",
-    );
+    setStatus({
+      type: "info",
+      message: "Your project brief has been downloaded.",
+    });
   }
+
   async function submit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
-    if (!configured) {
-      download(form);
-      return;
-    }
+
     setBusy(true);
-    setStatus("");
+    setStatus(null);
+
+    const formData = new FormData(form);
+    const payload = Object.fromEntries(formData.entries());
+
     try {
       const response = await fetch("/api/enquiry", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(Object.fromEntries(new FormData(form))),
+        body: JSON.stringify(payload),
       });
+
       const result = await response.json();
-      if (!response.ok)
+
+      if (!response.ok) {
         throw new Error(
           result.error || "We could not send your enquiry. Please try again.",
         );
-      setStatus(
-        "Thank you. Your enquiry has been sent to Skyhigh Engineering.",
-      );
+      }
+
+      setStatus({
+        type: "success",
+        message:
+          result.message ||
+          "Thank you! Your enquiry has been sent to aeronixskylabs@gmail.com. Our engineering team will review it and get in touch with you shortly.",
+      });
       form.reset();
     } catch (error) {
-      setStatus(
-        error instanceof Error
-          ? error.message
-          : "We could not send your enquiry. Please try again.",
-      );
+      setStatus({
+        type: "error",
+        message:
+          error instanceof Error
+            ? error.message
+            : "We could not send your enquiry. Please try again.",
+      });
     } finally {
       setBusy(false);
     }
   }
+
   return (
     <form className="enquiry-form" onSubmit={submit}>
       <div className="form-grid">
@@ -97,7 +118,7 @@ export default function EnquiryForm({
             type="tel"
             autoComplete="tel"
             maxLength={30}
-            placeholder="Optional"
+            placeholder="e.g. +91 98765 43210"
           />
         </label>
         <label>
@@ -125,44 +146,48 @@ export default function EnquiryForm({
           <textarea
             name="requirements"
             required
-            minLength={10}
+            minLength={5}
             maxLength={5000}
             rows={5}
             placeholder="How will you use the space? Include any dimensions, quantity or timeline you have in mind."
           />
         </label>
       </div>
+
       <div className="honeypot" aria-hidden="true">
         <label>
           Leave this empty
           <input name="website" tabIndex={-1} autoComplete="off" />
         </label>
       </div>
+
       <p className="form-note">
-        {configured
-          ? "We’ll use these details to respond to your project enquiry."
-          : "Prepare a project brief to save and share. Online enquiry delivery is not available yet."}{" "}
+        Submissions are routed directly to our engineering team at{" "}
+        <strong>aeronixskylabs@gmail.com</strong>. View our{" "}
         <a href="/privacy">Privacy information</a>.
       </p>
+
       <button type="submit" className="button button-dark" disabled={busy}>
-        {busy
-          ? "Sending…"
-          : configured
-            ? "Send project enquiry"
-            : "Download project brief"}
+        {busy ? "Sending enquiry…" : "Send project enquiry"}
       </button>
-      {configured && (
-        <button
-          type="button"
-          className="secondary-form-action"
-          onClick={(e) => download(e.currentTarget.form!)}
+
+      <button
+        type="button"
+        className="secondary-form-action"
+        onClick={(e) => download(e.currentTarget.form!)}
+      >
+        Download a copy of my brief
+      </button>
+
+      {status && (
+        <div
+          className={`form-status form-status-${status.type}`}
+          role="status"
+          aria-live="polite"
         >
-          Save a copy of my brief
-        </button>
+          {status.message}
+        </div>
       )}
-      <p className="form-status" role="status" aria-live="polite">
-        {status}
-      </p>
     </form>
   );
 }
