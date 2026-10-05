@@ -1,27 +1,45 @@
 "use client";
+
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-export function Brand() {
+
+export function Brand({
+  variant = "dark",
+  stacked = false,
+}: {
+  variant?: "dark" | "light";
+  stacked?: boolean;
+}) {
+  const src = stacked
+    ? variant === "light"
+      ? "/images/logo-light.webp"
+      : "/images/logo-dark.webp"
+    : variant === "light"
+      ? "/images/logo-horizontal-white.webp"
+      : "/images/logo-horizontal.webp";
+
   return (
-    <span className="brand">
-      <span className="brand-symbol" aria-hidden="true">
-        <i />
-        <i />
-        <i />
-        <i />
-        <i />
-      </span>
-      <span>
-        SKYHIGH<small>ENGINEERING</small>
-      </span>
+    <span className={`brand brand-${variant} ${stacked ? "brand-stacked" : ""}`}>
+      <Image
+        src={src}
+        alt="Sky High - Engineered to Rise"
+        width={stacked ? 140 : 213}
+        height={stacked ? 129 : 40}
+        priority
+        className={`brand-logo ${stacked ? "brand-logo-stacked" : ""}`}
+      />
     </span>
   );
 }
+
 export default function Header() {
   const [open, setOpen] = useState(false);
   const path = usePathname();
+
   useEffect(() => setOpen(false), [path]);
+
   useEffect(() => {
     function escape(e: KeyboardEvent) {
       if (e.key === "Escape") setOpen(false);
@@ -29,6 +47,7 @@ export default function Header() {
     window.addEventListener("keydown", escape);
     return () => window.removeEventListener("keydown", escape);
   }, []);
+
   return (
     <header className="site-header">
       <div className="header-inner">

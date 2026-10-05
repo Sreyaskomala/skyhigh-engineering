@@ -91,7 +91,7 @@ export function Footer() {
       <div className="footer-main">
         <div>
           <Link href="/" aria-label="Skyhigh Engineering home">
-            <Brand />
+            <Brand stacked={true} />
           </Link>
           <p>
             Built smart. Built strong.
