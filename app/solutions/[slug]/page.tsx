@@ -76,6 +76,38 @@ export default async function SolutionPage({
           </ul>
         </div>
       </section>
+      {s.gallery && s.gallery.length > 0 && (
+        <section className="section solution-gallery-section">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">DESIGN & MODEL SHOWCASE</p>
+              <h2>
+                Explore models &
+                <br />
+                configurations.
+              </h2>
+            </div>
+            <div>
+              <p className="body-large">
+                Illustrated concepts from our design and manufacturing portfolio.
+                Every cabin is engineered around your required footprint,
+                insulation, glazing, and electrical provisions.
+              </p>
+            </div>
+          </div>
+          <div className="solution-gallery-grid">
+            {s.gallery.map((item) => (
+              <div key={item.image} className="gallery-item-card">
+                <ConceptImage name={item.image} alt={item.title} />
+                <div className="gallery-item-info">
+                  <h3>{item.title}</h3>
+                  <p>{item.subtitle}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
       <section className="section customization-band">
         <p className="eyebrow">MAKE IT YOURS</p>
         <h2>Designed around the details.</h2>

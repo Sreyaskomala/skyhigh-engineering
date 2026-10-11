@@ -21,7 +21,7 @@ export default function EnquiryForm({
     const data = new FormData(form);
     const text = [
       "SKYHIGH ENGINEERING — PROJECT BRIEF",
-      "Recipient Email: aeronixskylabs@gmail.com",
+      "Recipient Email: skyhighengineering.in@gmail.com",
       "",
       ...["name", "email", "phone", "solution", "location", "requirements"].map(
         (k) => `${k.toUpperCase()}: ${data.get(k) || "Not provided"}`,
@@ -71,7 +71,7 @@ export default function EnquiryForm({
         type: "success",
         message:
           result.message ||
-          "Thank you! Your enquiry has been sent to aeronixskylabs@gmail.com. Our engineering team will review it and get in touch with you shortly.",
+          "Thank you! Your enquiry has been sent to skyhighengineering.in@gmail.com. Our engineering team will review it and get in touch with you shortly.",
       });
       form.reset();
     } catch (error) {
@@ -163,7 +163,7 @@ export default function EnquiryForm({
 
       <p className="form-note">
         Submissions are routed directly to our engineering team at{" "}
-        <strong>aeronixskylabs@gmail.com</strong>. View our{" "}
+        <strong>skyhighengineering.in@gmail.com</strong>. View our{" "}
         <a href="/privacy">Privacy information</a>.
       </p>
 

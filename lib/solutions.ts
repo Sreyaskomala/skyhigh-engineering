@@ -7,6 +7,11 @@ export type Solution = {
   offerings: string[];
   applications: string[];
   detail: string;
+  gallery?: {
+    image: string;
+    title: string;
+    subtitle: string;
+  }[];
 };
 export const solutions: Solution[] = [
   {
@@ -26,6 +31,23 @@ export const solutions: Solution[] = [
       "Temporary & permanent modular structures",
     ],
     applications: ["Site infrastructure", "Workspaces", "Custom buildings"],
+    gallery: [
+      {
+        image: "prefab-office-sunset",
+        title: "Modern Prefab Office",
+        subtitle: "Rapid-assembly steel framed commercial workspace",
+      },
+      {
+        image: "prefab-guard-cabin",
+        title: "Heavy-Duty Prefab Guard Cabin",
+        subtitle: "Durable insulated security cabin with weather sealing",
+      },
+      {
+        image: "modular-office-sunset",
+        title: "Modular Office Facility",
+        subtitle: "Scalable modular construction for site administration",
+      },
+    ],
   },
   {
     slug: "accommodation-residential",
@@ -70,6 +92,23 @@ export const solutions: Solution[] = [
       "Industrial facilities",
       "Business premises",
     ],
+    gallery: [
+      {
+        image: "modular-office-sunset",
+        title: "Modular Site Office Complex",
+        subtitle: "Multi-cabin commercial administration and meeting suites",
+      },
+      {
+        image: "prefab-guard-booth",
+        title: "Perimeter Security & Guard Booth",
+        subtitle: "Compact site entry cabin with 360° visibility",
+      },
+      {
+        image: "modular-office-golden",
+        title: "Modular Workspace Unit",
+        subtitle: "Executive portable cabin with pre-fitted electricals & AC provision",
+      },
+    ],
   },
   {
     slug: "restaurant-retail",
@@ -93,23 +132,49 @@ export const solutions: Solution[] = [
   },
   {
     slug: "shipping-container-solutions",
-    name: "Shipping container solutions",
-    short: "A new purpose. A new possibility.",
-    image: "containers",
+    name: "Container cabins & solutions",
+    short: "Robust cabins. Precision engineered.",
+    image: "container-cabin-dusk",
     intro:
-      "Transform shipping containers into spaces with a purpose of their own.",
+      "Customized container cabins, portable site offices, and modular container spaces engineered for durable living and work.",
     detail:
-      "Adapt a single container or combine multiple units into a larger space. Each conversion starts with its intended use, dimensions and site conditions.",
+      "Transform high-grade shipping containers and modular frames into fully finished container cabins, luxury retreat suites, site offices and multi-unit living spaces tailored to your exact layout, finish and site requirements.",
     offerings: [
-      "Container offices & shops",
-      "Container restaurants & cafés",
-      "Container accommodation",
-      "Container workshops",
-      "Container stores & warehouses",
-      "Multi-container modular buildings",
-      "Customized container conversions",
+      "Container cabins & site offices",
+      "Customized container homes & retreats",
+      "Security & guard container cabins",
+      "Container cafés & pop-up commercial units",
+      "Multi-container modular complexes",
+      "Portable worker cabins & bunk-houses",
+      "Turnkey container conversions",
     ],
-    applications: ["Container conversions", "Storage", "Multi-unit spaces"],
+    applications: [
+      "Container cabins",
+      "Workspaces & offices",
+      "Living & retreats",
+    ],
+    gallery: [
+      {
+        image: "container-office",
+        title: "Modular Container Office Cabin",
+        subtitle: "Insulated site administration cabin with panoramic glass window",
+      },
+      {
+        image: "container-home",
+        title: "Golden-Hour Container Cabin Home",
+        subtitle: "Luxury residential container living suite with exterior deck",
+      },
+      {
+        image: "container-pavilion",
+        title: "Container Living Pavilion",
+        subtitle: "Spacious architectural container unit with integrated veranda",
+      },
+      {
+        image: "container-retreat-lake",
+        title: "Lakeside Container Cabin Retreat",
+        subtitle: "Boutique leisure cabin engineered for resorts & farm stays",
+      },
+    ],
   },
   {
     slug: "portable-utility",

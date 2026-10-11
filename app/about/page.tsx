@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ConceptImage, ProjectCTA } from "@/components/ui";
+import GoogleMap from "@/components/google-map";
 export const metadata: Metadata = {
   title: "About Skyhigh",
   description:
@@ -65,6 +66,34 @@ export default function About() {
             compromising quality, safety, durability or functionality.
           </p>
         </article>
+      </section>
+      <section className="section facility-section">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">OUR WORKS & INFRASTRUCTURE</p>
+            <h2>
+              Precision fabrication.
+              <br />
+              Dundigal, Hyderabad.
+            </h2>
+          </div>
+          <div>
+            <p className="body-large">
+              Our central manufacturing facility brings heavy steel fabrication,
+              modular container customisation, insulation, and interior finishing
+              under one controlled environment.
+            </p>
+            <p className="facility-address-text">
+              <strong>Factory Location:</strong> Survey No. 733, ORR Rd, Near
+              Sundara Chaitanya Ashram, Dundigal, Hyderabad, Telangana 500043
+            </p>
+          </div>
+        </div>
+        <ConceptImage
+          name="modular-office-sunset"
+          alt="Skyhigh Engineering precision modular facility concept"
+        />
+        <GoogleMap />
       </section>
       <ProjectCTA />
     </main>

@@ -3,6 +3,7 @@ import "@fontsource-variable/dm-sans";
 import type { Metadata, Viewport } from "next";
 import Header from "@/components/header";
 import { Footer } from "@/components/ui";
+import WhatsAppWidget from "@/components/whatsapp-widget";
 import "./globals.css";
 
 const siteUrl =
@@ -71,6 +72,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <WhatsAppWidget />
       </body>
     </html>
   );

@@ -108,13 +108,44 @@ export function Footer() {
         </div>
         <div>
           <h3>Spaces for every purpose</h3>
-          {solutions
-            .filter((_, i) => [0, 3, 7].includes(i))
-            .map((s) => (
-              <Link key={s.slug} href={`/solutions/${s.slug}`}>
-                {s.name}
-              </Link>
-            ))}
+          {[solutions[0], solutions[4], solutions[3], solutions[7]].map((s) => (
+            <Link key={s.slug} href={`/solutions/${s.slug}`}>
+              {s.name}
+            </Link>
+          ))}
+        </div>
+        <div className="footer-contact">
+          <h3>Contact & Works</h3>
+          <a
+            href="https://wa.me/+919491447943?text=Hi%20Skyhigh%20Engineering%2C%20I%20would%20like%20to%20enquire%20about%20your%20modular%20and%20container%20solutions."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-whatsapp-link"
+          >
+            WhatsApp: +919491447943
+          </a>
+          <a href="mailto:skyhighengineering.in@gmail.com">
+            skyhighengineering.in@gmail.com
+          </a>
+          <address className="footer-address">
+            <strong>Factory:</strong>
+            <br />
+            Survey No. 733, ORR Rd,
+            <br />
+            Near Sundara Chaitanya Ashram,
+            <br />
+            Dundigal, Hyderabad,
+            <br />
+            Telangana 500043
+          </address>
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Survey+No.+733,+ORR+Rd,+Near+Sundara+Chaitanya+Ashram,+Dundigal,+Hyderabad,+Telangana+500043"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-map-link"
+          >
+            View on Map →
+          </a>
         </div>
       </div>
       <div className="footer-bottom">

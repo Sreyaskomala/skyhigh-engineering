@@ -106,7 +106,14 @@ export default function Home() {
           </div>
         </div>
         <div className="featured-grid">
-          {[solutions[0], solutions[3], solutions[1], solutions[7]].map((s) => (
+          {[
+            solutions[0],
+            solutions[4],
+            solutions[1],
+            solutions[3],
+            solutions[2],
+            solutions[7],
+          ].map((s) => (
             <SolutionCard
               solution={s}
               index={solutions.indexOf(s)}

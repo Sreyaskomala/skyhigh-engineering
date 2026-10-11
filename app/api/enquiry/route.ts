@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import { solutions } from "@/lib/solutions";
 
-const TARGET_EMAIL = process.env.ENQUIRY_TO_EMAIL || "aeronixskylabs@gmail.com";
+const TARGET_EMAIL = process.env.ENQUIRY_TO_EMAIL || "skyhighengineering.in@gmail.com";
 
 function escapeHtml(str: string): string {
   return str
