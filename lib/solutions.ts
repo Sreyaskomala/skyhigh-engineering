@@ -38,9 +38,19 @@ export const solutions: Solution[] = [
         subtitle: "Rapid-assembly steel framed commercial workspace",
       },
       {
+        image: "prefab-office-skyline",
+        title: "Skyline Prefab Corporate Facility",
+        subtitle: "Turnkey modular office featuring exterior architectural fascia",
+      },
+      {
         image: "prefab-guard-cabin",
         title: "Heavy-Duty Prefab Guard Cabin",
         subtitle: "Durable insulated security cabin with weather sealing",
+      },
+      {
+        image: "prefab-office-golden",
+        title: "Executive Modular Workspace",
+        subtitle: "Engineered double-glazed prefabricated office suite at golden hour",
       },
       {
         image: "modular-office-sunset",
@@ -68,6 +78,28 @@ export const solutions: Solution[] = [
       "Portable accommodation units",
     ],
     applications: ["Workforce housing", "Farmhouses", "Guest accommodation"],
+    gallery: [
+      {
+        image: "prefab-villa-two-storey",
+        title: "Two-Storey Prefabricated Luxury Villa",
+        subtitle: "Fast-assembly two-level steel modular residence with balcony",
+      },
+      {
+        image: "container-home",
+        title: "Golden-Hour Container Cabin Home",
+        subtitle: "Luxury residential container living suite with exterior deck",
+      },
+      {
+        image: "container-home-golden",
+        title: "Compact Architectural Living Cabin",
+        subtitle: "Modern dwelling engineered for farmhouses and private estates",
+      },
+      {
+        image: "shipping-container-villas-offices",
+        title: "Multi-Unit Modular Residential Cluster",
+        subtitle: "Scalable container accommodation units for workforce or community housing",
+      },
+    ],
   },
   {
     slug: "commercial-industrial",
@@ -99,6 +131,11 @@ export const solutions: Solution[] = [
         subtitle: "Multi-cabin commercial administration and meeting suites",
       },
       {
+        image: "teal-skyline-office",
+        title: "Teal Skyline Prefabricated Office Suite",
+        subtitle: "High-spec insulated office with large picture glazing & dusk illumination",
+      },
+      {
         image: "prefab-guard-booth",
         title: "Perimeter Security & Guard Booth",
         subtitle: "Compact site entry cabin with 360° visibility",
@@ -107,6 +144,16 @@ export const solutions: Solution[] = [
         image: "modular-office-golden",
         title: "Modular Workspace Unit",
         subtitle: "Executive portable cabin with pre-fitted electricals & AC provision",
+      },
+      {
+        image: "modular-office-container",
+        title: "Heavy-Duty Site Administration Cabin",
+        subtitle: "Ruggedized steel container office built for industrial sites",
+      },
+      {
+        image: "industrial-containers-yard",
+        title: "Industrial Yard & Storage Containers",
+        subtitle: "Standardized and modified shipping containers for yard logistics",
       },
     ],
   },
@@ -129,6 +176,23 @@ export const solutions: Solution[] = [
       "Customized restaurant interiors",
     ],
     applications: ["Food & beverage", "Retail", "Commercial hospitality"],
+    gallery: [
+      {
+        image: "container-pavilion",
+        title: "Container Living & Dining Pavilion",
+        subtitle: "Spacious architectural container unit with integrated veranda",
+      },
+      {
+        image: "shipping-container-villas-offices",
+        title: "Multi-Unit Retail & Food Hub",
+        subtitle: "Modular container clusters designed for food courts and pop-up markets",
+      },
+      {
+        image: "container-office",
+        title: "Turnkey Container Café & Kiosk",
+        subtitle: "Quick-service commercial food & beverage kiosk with service windows",
+      },
+    ],
   },
   {
     slug: "shipping-container-solutions",
@@ -155,6 +219,11 @@ export const solutions: Solution[] = [
     ],
     gallery: [
       {
+        image: "container-cabin-dusk",
+        title: "Container Cabin at Dusk",
+        subtitle: "All-weather insulated container home with modern architectural fenestration",
+      },
+      {
         image: "container-office",
         title: "Modular Container Office Cabin",
         subtitle: "Insulated site administration cabin with panoramic glass window",
@@ -173,6 +242,16 @@ export const solutions: Solution[] = [
         image: "container-retreat-lake",
         title: "Lakeside Container Cabin Retreat",
         subtitle: "Boutique leisure cabin engineered for resorts & farm stays",
+      },
+      {
+        image: "container-home-golden",
+        title: "Compact Architectural Container Suite",
+        subtitle: "Self-contained modern modular suite with custom interior woodwork",
+      },
+      {
+        image: "steel-modular-outdoor-container",
+        title: "Steel Modular Transportable Unit",
+        subtitle: "Compact 8.5-foot modular container cabin ready for quick deployment",
       },
     ],
   },
@@ -194,6 +273,28 @@ export const solutions: Solution[] = [
       "Site utility structures",
     ],
     applications: ["Site support", "Education", "Healthcare", "Storage"],
+    gallery: [
+      {
+        image: "prefab-guard-booth",
+        title: "Perimeter Security & Guard Booth",
+        subtitle: "Compact site entry cabin with 360° visibility and weatherproof roof",
+      },
+      {
+        image: "prefab-guard-cabin",
+        title: "Heavy-Duty Prefab Security Post",
+        subtitle: "Heavy-gauge steel cabin equipped with electrical distribution and sliding window",
+      },
+      {
+        image: "steel-modular-outdoor-container",
+        title: "Portable Modular Utility Cabin",
+        subtitle: "Durable weatherproof unit for on-site control rooms and equipment housing",
+      },
+      {
+        image: "industrial-containers-yard",
+        title: "Secure Site Storage Units",
+        subtitle: "Weatherproof locked container storage for tools, materials and utilities",
+      },
+    ],
   },
   {
     slug: "transport-mobile",
@@ -216,6 +317,23 @@ export const solutions: Solution[] = [
       "Transportable workspaces",
       "Mobile services",
     ],
+    gallery: [
+      {
+        image: "steel-modular-outdoor-container",
+        title: "Compact Transportable Container Cabin",
+        subtitle: "Pre-wired, crane-liftable modular container unit engineered for rapid relocation",
+      },
+      {
+        image: "modular-office-container",
+        title: "Relocatable Modular Site Office",
+        subtitle: "Robust container office engineered for multiple site redeployments",
+      },
+      {
+        image: "prefab-guard-booth",
+        title: "Transportable Security Booth",
+        subtitle: "Forklift-pocket equipped security checkpoint cabin",
+      },
+    ],
   },
   {
     slug: "hospitality-leisure",
@@ -235,6 +353,28 @@ export const solutions: Solution[] = [
       "Leisure & recreation structures",
     ],
     applications: ["Resorts", "Tourism", "Farm stays", "Leisure"],
+    gallery: [
+      {
+        image: "container-retreat-lake",
+        title: "Lakeside Container Cabin Retreat",
+        subtitle: "Boutique leisure cabin engineered for waterfront resorts & nature stays",
+      },
+      {
+        image: "modular-retreat-cabin",
+        title: "Sky High Modular Retreat",
+        subtitle: "Architectural leisure cabin with warm timber cladding and wrap-around deck",
+      },
+      {
+        image: "prefab-villa-two-storey",
+        title: "Two-Storey Modular Resort Villa",
+        subtitle: "Two-level hospitality structure with private terrace for estate farmstays",
+      },
+      {
+        image: "container-home-golden",
+        title: "Golden-Hour Weekend Cabin",
+        subtitle: "Self-contained holiday retreat cabin with floor-to-ceiling glass",
+      },
+    ],
   },
 ];
 export const process = [

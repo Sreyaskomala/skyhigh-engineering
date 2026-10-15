@@ -88,6 +88,67 @@ export default function Engineering() {
           are defined around the agreed scope.
         </p>
       </section>
+      <section className="section showcase-section">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">STRUCTURAL SYSTEMS &amp; DETAILING</p>
+            <h2>
+              Engineered for durability.
+              <br />
+              Fabricated to specification.
+            </h2>
+          </div>
+          <div>
+            <p className="body-large">
+              From heavy-gauge steel framing and insulated sandwich panel walls
+              to custom architectural fenestration and pre-tested MEP services,
+              each module is built to rigorous industrial standards.
+            </p>
+          </div>
+        </div>
+        <div className="solution-gallery-grid">
+          <div className="gallery-item-card">
+            <ConceptImage
+              name="prefab-office-skyline"
+              alt="Structural framing and architectural fascia"
+            />
+            <div className="gallery-item-info">
+              <h3>Integrated Framing &amp; Fascia</h3>
+              <p>Heavy-duty structural steel skeleton with architectural branding parapet.</p>
+            </div>
+          </div>
+          <div className="gallery-item-card">
+            <ConceptImage
+              name="teal-skyline-office"
+              alt="Architectural glazing and climate sealing"
+            />
+            <div className="gallery-item-info">
+              <h3>Glazing &amp; Thermal Envelopes</h3>
+              <p>Double-pane acoustic fenestration, PIR/Rockwool insulation, and weatherproofing.</p>
+            </div>
+          </div>
+          <div className="gallery-item-card">
+            <ConceptImage
+              name="shipping-container-villas-offices"
+              alt="Multi-module container structural engineering"
+            />
+            <div className="gallery-item-info">
+              <h3>Multi-Module Container Complexes</h3>
+              <p>Interlocking corner castings and load-bearing framing for multi-storey expansion.</p>
+            </div>
+          </div>
+          <div className="gallery-item-card">
+            <ConceptImage
+              name="steel-modular-outdoor-container"
+              alt="Transportable structural container modules"
+            />
+            <div className="gallery-item-info">
+              <h3>Rapid-Deployment Utility Units</h3>
+              <p>Rigid monocoque steel construction with integrated lifting points for crane transport.</p>
+            </div>
+          </div>
+        </div>
+      </section>
       <ProjectCTA />
     </main>
   );

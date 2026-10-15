@@ -1,128 +1,281 @@
 [
   {
     "asset": "hero.webp",
-    "source": "Modern Modular Building with Glass Terrace-1.png",
-    "dimensions": [1672, 941],
-    "usage": "Concept illustration; project provenance unverified"
+    "source": "Modern Sky High Modular Office at Sunset.png",
+    "usage": "Homepage hero, About page hero, OpenGraph default social card",
+    "dimensions": [
+      1774,
+      887
+    ]
   },
   {
     "asset": "prefab.webp",
-    "source": "Modern Modular Office at Sunset.png",
-    "dimensions": [1670, 942],
-    "usage": "Concept illustration; project provenance unverified"
+    "source": "Sky High Prefab Office at Sunset.png",
+    "usage": "Prefab & modular buildings category cover",
+    "dimensions": [
+      1774,
+      887
+    ]
   },
   {
     "asset": "residential.webp",
-    "source": "Warm Evening Modular Container Housing.png",
-    "dimensions": [1670, 941],
-    "usage": "Concept illustration; project provenance unverified"
+    "source": "Golden-Hour Sky High Container Home.png",
+    "usage": "Accommodation & residential category cover",
+    "dimensions": [
+      1536,
+      1024
+    ]
   },
   {
     "asset": "commercial.webp",
-    "source": "Twilight Modular Site Office Complex.png",
-    "dimensions": [1670, 942],
-    "usage": "Concept illustration; project provenance unverified"
+    "source": "Modular Sky High Container Office.png",
+    "usage": "Commercial & industrial category cover, Engineering page hero",
+    "dimensions": [
+      1491,
+      1055
+    ]
   },
   {
     "asset": "restaurant.webp",
-    "source": "Container Caf\u00e9 at Twilight.png",
-    "dimensions": [1670, 942],
-    "usage": "Concept illustration; project provenance unverified"
+    "source": "Sky High Container Living Pavilion.png",
+    "usage": "Restaurant & retail spaces category cover",
+    "dimensions": [
+      1536,
+      1024
+    ]
   },
   {
     "asset": "containers.webp",
-    "source": "Modern Modular Container Home at Sunset-2.png",
-    "dimensions": [1672, 941],
-    "usage": "Concept illustration; project provenance unverified"
+    "source": "Sky High Container Home at Dusk.png",
+    "usage": "Container cabins & solutions category cover",
+    "dimensions": [
+      1688,
+      932
+    ]
   },
   {
     "asset": "utility.webp",
-    "source": "Modern Portable Office Container.png",
-    "dimensions": [1536, 1024],
-    "usage": "Concept illustration; project provenance unverified"
+    "source": "Modern Prefab Guard Booth on Site.png",
+    "usage": "Portable & utility solutions category cover",
+    "dimensions": [
+      1383,
+      1137
+    ]
   },
   {
     "asset": "mobile.webp",
-    "source": "Mobile Modular Office Trailer at Sunrise.png",
-    "dimensions": [1536, 1024],
-    "usage": "Concept illustration; project provenance unverified"
+    "source": "steel-modular-outdoor-container-home-8-5-feet-2229610863-9jj06riq.jpg",
+    "usage": "Transport & mobile solutions category cover",
+    "dimensions": [
+      360,
+      360
+    ]
   },
   {
     "asset": "hospitality.webp",
-    "source": "Golden-Hour A-Frame Mountain Retreat.png",
-    "dimensions": [1536, 1024],
-    "usage": "Concept illustration; project provenance unverified"
-  },
-  {
-    "asset": "retreat.webp",
-    "source": "Sunset Tropical Container Cabin.png",
-    "dimensions": [1536, 1024],
-    "usage": "Concept illustration; project provenance unverified"
+    "source": "Sky High Container Retreat.png",
+    "usage": "Hospitality & leisure category cover",
+    "dimensions": [
+      1536,
+      1024
+    ]
   },
   {
     "asset": "garden.webp",
-    "source": "Modern Glass-Front Modular Garden Office.png",
-    "dimensions": [1671, 941],
-    "usage": "Concept illustration; project provenance unverified"
+    "source": "Modern SKY HIGH Prefab Office at Golden Hour.png",
+    "usage": "Homepage custom engineering feature banner",
+    "dimensions": [
+      1774,
+      887
+    ]
+  },
+  {
+    "asset": "retreat.webp",
+    "source": "Sky High Modular Retreat.png",
+    "usage": "Modular leisure retreat showcase",
+    "dimensions": [
+      1254,
+      1254
+    ]
   },
   {
     "asset": "container-cabin-dusk.webp",
     "source": "Sky High Container Home at Dusk.png",
-    "dimensions": [1688, 932],
-    "usage": "Concept illustration; new images upload folder"
+    "usage": "Container living suite showcase",
+    "dimensions": [
+      1688,
+      932
+    ]
   },
   {
     "asset": "container-office.webp",
     "source": "Modular Sky High Container Office.png",
-    "dimensions": [1491, 1055],
-    "usage": "Concept illustration; new images upload folder"
+    "usage": "Container office showcase",
+    "dimensions": [
+      1491,
+      1055
+    ]
   },
   {
     "asset": "container-home.webp",
     "source": "Golden-Hour Sky High Container Home.png",
-    "dimensions": [1536, 1024],
-    "usage": "Concept illustration; new images upload folder"
+    "usage": "Container home showcase",
+    "dimensions": [
+      1536,
+      1024
+    ]
   },
   {
     "asset": "container-pavilion.webp",
     "source": "Sky High Container Living Pavilion.png",
-    "dimensions": [1536, 1024],
-    "usage": "Concept illustration; new images upload folder"
+    "usage": "Container pavilion showcase",
+    "dimensions": [
+      1536,
+      1024
+    ]
   },
   {
     "asset": "container-retreat-lake.webp",
     "source": "Sky High Container Retreat.png",
-    "dimensions": [1536, 1024],
-    "usage": "Concept illustration; new images upload folder"
+    "usage": "Lakeside container retreat showcase",
+    "dimensions": [
+      1536,
+      1024
+    ]
   },
   {
     "asset": "prefab-guard-booth.webp",
     "source": "Modern Prefab Guard Booth on Site.png",
-    "dimensions": [1383, 1137],
-    "usage": "Concept illustration; new images upload folder"
-  },
-  {
-    "asset": "prefab-office-sunset.webp",
-    "source": "Sky High Prefab Office at Sunset.png",
-    "dimensions": [1774, 887],
-    "usage": "Concept illustration; new images upload folder"
-  },
-  {
-    "asset": "modular-office-sunset.webp",
-    "source": "Modern Sky High Modular Office at Sunset.png",
-    "dimensions": [1774, 887],
-    "usage": "Concept illustration; new images upload folder"
+    "usage": "Prefab guard booth showcase",
+    "dimensions": [
+      1383,
+      1137
+    ]
   },
   {
     "asset": "prefab-guard-cabin.webp",
     "source": "Sky High Prefab Guard Cabin.png",
-    "dimensions": [1254, 1254],
-    "usage": "Concept illustration; new images upload folder"
+    "usage": "Prefab security cabin showcase",
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "asset": "prefab-office-sunset.webp",
+    "source": "Sky High Prefab Office at Sunset.png",
+    "usage": "Prefab office showcase",
+    "dimensions": [
+      1774,
+      887
+    ]
+  },
+  {
+    "asset": "modular-office-sunset.webp",
+    "source": "Modern Sky High Modular Office at Sunset.png",
+    "usage": "Modular office showcase",
+    "dimensions": [
+      1774,
+      887
+    ]
   },
   {
     "asset": "modular-office-golden.webp",
     "source": "Sky High Modular Office at Golden Hour.png",
-    "dimensions": [1774, 887],
-    "usage": "Concept illustration; new images upload folder"
+    "usage": "Modular office golden hour showcase",
+    "dimensions": [
+      1774,
+      887
+    ]
+  },
+  {
+    "asset": "modular-office-container.webp",
+    "source": "Sky High Modular Office Container.png",
+    "usage": "Modular office container showcase",
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "asset": "container-home-golden.webp",
+    "source": "Sky High Container Home at Golden Hour.png",
+    "usage": "Golden hour container home showcase",
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "asset": "modular-retreat-cabin.webp",
+    "source": "Sky High Modular Retreat.png",
+    "usage": "Modular retreat cabin showcase",
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "asset": "prefab-villa-two-storey.webp",
+    "source": "Fast-Install-Steel-Structure-Prefabricated-Building-Luxury-Villa-Two-Storey-Prefab-Houses-Detchable-Container-House.jpg",
+    "usage": "Two-storey modular villa showcase",
+    "dimensions": [
+      958,
+      958
+    ]
+  },
+  {
+    "asset": "prefab-office-skyline.webp",
+    "source": "Modern Prefab Office with Skyline Branding.png",
+    "usage": "Prefab office skyline branding showcase",
+    "dimensions": [
+      1536,
+      1024
+    ]
+  },
+  {
+    "asset": "prefab-office-golden.webp",
+    "source": "Modern SKY HIGH Prefab Office at Golden Hour.png",
+    "usage": "Prefab office golden hour showcase",
+    "dimensions": [
+      1774,
+      887
+    ]
+  },
+  {
+    "asset": "teal-skyline-office.webp",
+    "source": "Teal Skyline Prefab Office at Dusk.png",
+    "usage": "Teal skyline office showcase",
+    "dimensions": [
+      1536,
+      1024
+    ]
+  },
+  {
+    "asset": "industrial-containers-yard.webp",
+    "source": "kumar-and-associates-faridabad-faridabad-containers-on-rent-lfwu6elfay.jpg",
+    "usage": "Industrial container yard & rental cabins showcase",
+    "dimensions": [
+      1600,
+      1200
+    ]
+  },
+  {
+    "asset": "shipping-container-villas-offices.webp",
+    "source": "Shipping-Container-Homes-Villas-Offices..jpg",
+    "usage": "Multi-unit container villas and offices showcase",
+    "dimensions": [
+      500,
+      500
+    ]
+  },
+  {
+    "asset": "steel-modular-outdoor-container.webp",
+    "source": "steel-modular-outdoor-container-home-8-5-feet-2229610863-9jj06riq.jpg",
+    "usage": "Transportable outdoor container unit showcase",
+    "dimensions": [
+      360,
+      360
+    ]
   }
 ]

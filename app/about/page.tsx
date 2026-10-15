@@ -93,6 +93,38 @@ export default function About() {
           name="modular-office-sunset"
           alt="Skyhigh Engineering precision modular facility concept"
         />
+        <div className="solution-gallery-grid" style={{ marginTop: "32px", marginBottom: "40px" }}>
+          <div className="gallery-item-card">
+            <ConceptImage
+              name="industrial-containers-yard"
+              alt="Heavy structural steel container yard"
+            />
+            <div className="gallery-item-info">
+              <h3>Structural Steel &amp; Yard Logistics</h3>
+              <p>Heavy-gauge container sourcing, structural framing, and crane logistics.</p>
+            </div>
+          </div>
+          <div className="gallery-item-card">
+            <ConceptImage
+              name="modular-office-golden"
+              alt="In-factory modular office fabrication"
+            />
+            <div className="gallery-item-info">
+              <h3>Precision In-Factory Fabrication</h3>
+              <p>Controlled environment assembly ensuring structural alignment and quality joints.</p>
+            </div>
+          </div>
+          <div className="gallery-item-card">
+            <ConceptImage
+              name="prefab-guard-cabin"
+              alt="Weather-sealed modular cabin fit-out"
+            />
+            <div className="gallery-item-info">
+              <h3>Insulation &amp; Turnkey Fit-Out</h3>
+              <p>Multi-layer acoustic/thermal insulation, electrical cabling, and architectural finishes.</p>
+            </div>
+          </div>
+        </div>
         <GoogleMap />
       </section>
       <ProjectCTA />

@@ -11,34 +11,64 @@ export const metadata: Metadata = {
 
 const cabinShowcase = [
   {
-    image: "container-cabin-dusk",
-    title: "Container Home at Dusk",
-    desc: "Luxury residential container living cabin with multi-room layout.",
+    image: "prefab-villa-two-storey",
+    title: "Two-Storey Prefab Luxury Villa",
+    desc: "Fast-install steel structure modular residence with upper balcony & panoramic windows.",
   },
   {
-    image: "container-office",
-    title: "Modular Container Office",
-    desc: "Turnkey site executive office with insulated panels & glass front.",
+    image: "prefab-office-skyline",
+    title: "Skyline Prefab Corporate Facility",
+    desc: "Turnkey commercial modular building with architectural branding & entry portal.",
+  },
+  {
+    image: "teal-skyline-office",
+    title: "Teal Skyline Modular Office",
+    desc: "High-spec executive office with acoustic insulation and exterior dusk illumination.",
+  },
+  {
+    image: "container-cabin-dusk",
+    title: "Container Cabin at Dusk",
+    desc: "All-weather insulated container home with custom architectural fenestration.",
+  },
+  {
+    image: "modular-office-sunset",
+    title: "Modular Site Office Complex",
+    desc: "Scalable administrative facility with integrated conference rooms and workstations.",
   },
   {
     image: "container-home",
     title: "Golden-Hour Container Cabin",
-    desc: "Private retreat cabin engineered for farmhouses and estates.",
-  },
-  {
-    image: "container-pavilion",
-    title: "Container Living Pavilion",
-    desc: "Spacious architectural container unit with integrated veranda.",
+    desc: "Luxury residential container living suite with exterior timber deck.",
   },
   {
     image: "container-retreat-lake",
-    title: "Lakeside Container Cabin",
-    desc: "Compact modular hospitality suite built for destination stays.",
+    title: "Lakeside Container Cabin Retreat",
+    desc: "Boutique hospitality suite engineered for resorts, farm stays and leisure.",
+  },
+  {
+    image: "modular-retreat-cabin",
+    title: "Sky High Modular Retreat",
+    desc: "Architectural leisure cabin with warm timber cladding and wrap-around deck.",
+  },
+  {
+    image: "container-pavilion",
+    title: "Container Living & Dining Pavilion",
+    desc: "Spacious open-concept container space with covered patio and dining veranda.",
+  },
+  {
+    image: "prefab-guard-cabin",
+    title: "Heavy-Duty Prefab Security Cabin",
+    desc: "Heavy-gauge steel security post with 360-degree visibility and sliding window.",
   },
   {
     image: "prefab-guard-booth",
-    title: "Perimeter Security Guard Booth",
-    desc: "Heavy-duty entry security cabin with 360-degree glass view.",
+    title: "Perimeter Security & Guard Booth",
+    desc: "Weatherproof site entry cabin engineered for rapid site placement.",
+  },
+  {
+    image: "steel-modular-outdoor-container",
+    title: "Steel Modular Transportable Unit",
+    desc: "Compact 8.5-foot modular container unit engineered for quick deployment.",
   },
 ];
 

@@ -1304,6 +1304,12 @@ button:disabled {
   padding-top: 60px;
 }
 
+.facility-section > .image-wrap {
+  margin-top: 36px;
+  aspect-ratio: 2.2;
+  border-radius: 6px;
+}
+
 .facility-address-text {
   margin-top: 14px;
   font-size: 0.9rem;

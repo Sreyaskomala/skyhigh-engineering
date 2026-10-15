@@ -168,6 +168,90 @@ export default function Home() {
         </div>
         <Process />
       </section>
+      <section className="section showcase-section home-showcase">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">04 / FEATURED DESIGNS &amp; CABINS</p>
+            <h2>
+              Fabricated precision.
+              <br />
+              Tailored to your site.
+            </h2>
+          </div>
+          <div>
+            <p className="body-large">
+              Every unit is engineered with high-strength structural steel,
+              custom weather-sealed panels, and pre-fitted electricals from our
+              manufacturing facility in Dundigal, Hyderabad.
+            </p>
+            <Link href="/solutions" className="text-link">
+              Explore full lineup &amp; specifications →
+            </Link>
+          </div>
+        </div>
+        <div className="solution-gallery-grid">
+          <div className="gallery-item-card">
+            <ConceptImage
+              name="prefab-villa-two-storey"
+              alt="Two-Storey Prefabricated Luxury Villa"
+            />
+            <div className="gallery-item-info">
+              <h3>Two-Storey Prefab Luxury Villa</h3>
+              <p>Two-level steel modular residence with upper deck &amp; panoramic windows.</p>
+            </div>
+          </div>
+          <div className="gallery-item-card">
+            <ConceptImage
+              name="container-cabin-dusk"
+              alt="Container Cabin at Dusk"
+            />
+            <div className="gallery-item-info">
+              <h3>Container Living Suite at Dusk</h3>
+              <p>Turnkey all-weather container cabin with modern architectural fenestration.</p>
+            </div>
+          </div>
+          <div className="gallery-item-card">
+            <ConceptImage
+              name="prefab-office-skyline"
+              alt="Skyline Prefab Corporate Facility"
+            />
+            <div className="gallery-item-info">
+              <h3>Skyline Prefab Corporate Facility</h3>
+              <p>Turnkey modular office featuring exterior architectural fascia &amp; branding.</p>
+            </div>
+          </div>
+          <div className="gallery-item-card">
+            <ConceptImage
+              name="container-retreat-lake"
+              alt="Lakeside Container Cabin Retreat"
+            />
+            <div className="gallery-item-info">
+              <h3>Lakeside Container Retreat</h3>
+              <p>Boutique hospitality cabin engineered for farmstays, resorts, and tourism.</p>
+            </div>
+          </div>
+          <div className="gallery-item-card">
+            <ConceptImage
+              name="prefab-guard-booth"
+              alt="Perimeter Security &amp; Guard Booth"
+            />
+            <div className="gallery-item-info">
+              <h3>Perimeter Security &amp; Guard Booth</h3>
+              <p>Compact high-visibility site entry security post with weatherproof roof.</p>
+            </div>
+          </div>
+          <div className="gallery-item-card">
+            <ConceptImage
+              name="container-home"
+              alt="Golden-Hour Container Cabin Home"
+            />
+            <div className="gallery-item-info">
+              <h3>Golden-Hour Container Cabin</h3>
+              <p>Luxury private retreat cabin engineered for farmhouses and private estates.</p>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="application-banner">
         <ConceptImage
           name="retreat"
